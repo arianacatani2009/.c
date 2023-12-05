@@ -52,7 +52,7 @@ app.get('/pedido',(req,res)=>{
 app.get('/',(req,res)=>{
     res.send("")
 })
-app.get('/',(req,res)=>{
+app.get('/pedidoss',(req,res)=>{
     res.send("Bienvenido - usuario")
 })
 app.listen (3000)
