@@ -29,7 +29,7 @@ app.get('/',(req,res)=>{
     req.params
     req.query
 })
-/*
+
 //publicas
 app.get('/entrada',(req,res)=>{
     res.send("Entrada al local")
@@ -50,7 +50,7 @@ app.get('/pedido',(req,res)=>{
 })
 */
 app.get('/',(req,res)=>{
-    res.send("")
+    res.send("Bienvenido")
 })
 app.get('/pedidoss',(req,res)=>{
     res.send("Bienvenido - usuario")
@@ -94,7 +94,7 @@ app.get('/search',(req,res)=>{
         res.send("Otro tipo de hamburquesa")
     }
 })
-*/
+
 app.get('/hamburguesa/simple',(req,res)=>{
     res.send("Hamburguesa - simple")
 })
@@ -118,3 +118,4 @@ app.get('/hamburguesa/mixta',(req,res)=>{
 app.listen(3000)
 console.log("Web server ejecutandose en el puesto 3000")
 
+*/
