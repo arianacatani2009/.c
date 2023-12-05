@@ -29,7 +29,7 @@ app.get('/',(req,res)=>{
     req.params
     req.query
 })
-*/
+/*
 //publicas
 app.get('/entrada',(req,res)=>{
     res.send("Entrada al local")
@@ -46,14 +46,21 @@ app.use((req,res,next)=>{
 })
 //privadas
 app.get('/pedido',(req,res)=>{
-    res.send("Bienvenido -- listo para tomar su orden")
+    res.send(`Bienvenido -${req.body.email} -- listo para tomar su orden`)
 })
-
+*/
+app.get('/',(req,res)=>{
+    res.send("")
+})
+app.get('/',(req,res)=>{
+    res.send("Bienvenido - usuario")
+})
+app.listen (3000)
 //ruta
 /*
 app.get('/',(req,res)=>{
     res.send("Bienvenidos")
-})
+})//
 //ruta
 app.get('/dashboard',(req,res)=>{
     res.send("Dashboard principal")
